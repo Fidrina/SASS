@@ -26,7 +26,7 @@
 
 ```sass
     h1
-        color: red;
+        color: red
 ```
 
 ```bash
