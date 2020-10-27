@@ -1,6 +1,6 @@
 <p align="center"><img src="Sass_Logo_Color.svg" width="400"></p>
 
-<p align="center">Creating a simple page using <a href="https://sass-lang.com">👉 SASS 👈</a></p>
+<p align="center">Creating a simple page using <a href="https://sass-lang.com">👉 SASS (Syntactically Awesome Style Sheets) 👈</a></p>
 
 <p align="center">
     <a href="https://opensource.org/licenses/MIT">
