@@ -29,10 +29,16 @@
         color: red
 ```
 
-<h6 align="center">Terminal</h6>
+<h6 align="center">Sass to Scss</h6>
 
-```bash
+```sass
     sass main.sass main.scss
+```
+
+<h6 align="center">Scss to Css</h6>
+
+```sass
+    sass main.scss main.css
 ```
 
 <h6 align="center">Scss</h6>
@@ -41,4 +47,29 @@
     h1 {
         color: red;
     }
+```
+
+<h6 align="center">Variables</h6>
+
+```sass
+    $color: black;
+
+    h1 {
+        color: $color;
+    }
+
+    h2 {
+        color: $color;
+        font-size: 2rem;
+    }
+```
+
+<h6 align="center">Watch</h6>
+
+```sass
+    sass --watch <origin>:<target>
+```
+
+```sass
+    sass --watch main.scss:main.css
 ```
