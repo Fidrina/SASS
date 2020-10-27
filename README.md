@@ -13,3 +13,9 @@
         <img alt="License" src="https://img.shields.io/github/followers/MagicalStrangeQuark?style=social">
     </a>
 </p>
+
+<h6 align="center">Installation</h6>
+
+```bash
+    sudo npm install -g sass
+```
