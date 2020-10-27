@@ -19,3 +19,16 @@
 ```bash
     sudo npm install -g sass
 ```
+
+<h6 align="center">Compile Sass</h6>
+
+<h6 align="center">main.sass</h6>
+
+```sass
+    h1
+        color: red;
+```
+
+```bash
+    sass main.sass main.scss
+```
