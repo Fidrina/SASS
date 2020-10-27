@@ -22,13 +22,23 @@
 
 <h6 align="center">Compile Sass</h6>
 
-<h6 align="center">main.sass</h6>
+<h6 align="center">Sass</h6>
 
 ```sass
     h1
         color: red
 ```
 
+<h6 align="center">Terminal</h6>
+
 ```bash
     sass main.sass main.scss
+```
+
+<h6 align="center">Scss</h6>
+
+```sass
+    h1 {
+        color: red;
+    }
 ```
