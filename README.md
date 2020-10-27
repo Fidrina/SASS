@@ -64,7 +64,7 @@
     }
 ```
 
-<h6 align="center">Watch</h6>
+<h6 align="center">Watch Files/Folders</h6>
 
 ```sass
     sass --watch <origin>:<target>
