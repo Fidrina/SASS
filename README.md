@@ -200,3 +200,18 @@
         $counter: $counter + 1;
     }
 ```
+
+<h6 align="center">Each</h6>
+
+```sass
+    $list: green, black, yellow, white, gray;
+    $counter: 0;
+
+    @each $color in $list {
+        div-#{$counter} {
+            background-color: $color;
+        }
+
+        $counter: $counter + 1;
+    }
+```
