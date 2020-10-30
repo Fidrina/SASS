@@ -186,3 +186,17 @@
         }
     }
 ```
+
+<h6 align="center">While</h6>
+
+```sass
+    $counter: 0;
+
+    @while ($counter < 5) {
+        .list-item-#{$counter} {
+            background-color: green;
+        }
+        
+        $counter: $counter + 1;
+    }
+```
