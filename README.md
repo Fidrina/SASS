@@ -168,3 +168,21 @@
         color: red;
     }
 ```
+
+<h6 align="center">For</h6>
+
+```sass
+    @for $i from 1 through 3 {
+        .item-#{$i} {
+            color: black;
+        }
+    }
+```
+
+```sass
+    @for $i from 1 to 3 {
+        .item-#{$i} {
+            color: black;
+        }
+    }
+```
