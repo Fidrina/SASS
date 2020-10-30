@@ -79,6 +79,8 @@
 <h6 align="center">Aninhamento</h6>
 
 ```css
+    @charset "UTF-8";
+    
     #conteudo {
         background: green;
         padding: 15px;
@@ -130,5 +132,38 @@
 
     h2 {
         background-color: $default-color; /* blue */
+    }
+```
+
+```sass
+    $default-color: blue;
+
+    h1 {
+        $default-color: red !global;
+
+        background-color: $default-color; /* red */
+    }
+
+    h2 {
+        background-color: $default-color; /* red */
+    }
+```
+
+<h6 align="center">Interpolation</h6>
+
+```sass
+    $class: red;
+    $color: color;
+
+    .#{$color} {
+        #{$color}: $class;
+    }
+```
+
+```css
+    @charset "UTF-8";
+
+    .color {
+        color: red;
     }
 ```
