@@ -1,6 +1,6 @@
 <p align="center"><img src="Sass_Logo_Color.svg" width="400"></p>
 
-<p align="center">Creating a simple page using <a href="https://sass-lang.com">👉 SASS (Syntactically Awesome Style Sheets) 👈</a></p>
+<p align="center">Creating a simple docs of <a href="https://sass-lang.com">👉 SASS (Syntactically Awesome Style Sheets) 👈</a></p>
 
 <p align="center">
     <a href="https://opensource.org/licenses/MIT">
@@ -19,6 +19,8 @@
 ```bash
     sudo npm install -g sass
 ```
+
+<p align="center"><a href="https://www.sassmeister.com">SASS Meister</a></p>
 
 <h6 align="center">Compile Sass</h6>
 
@@ -72,4 +74,61 @@
 
 ```sass
     sass --watch main.scss:main.css
+```
+
+<h6 align="center">Aninhamento</h6>
+
+```css
+    #conteudo {
+        background: green;
+        padding: 15px;
+    }
+
+    #conteudo h1, h2 {
+        color: black;
+    }
+
+    #conteudo a {
+        color: red;
+    }
+
+    #conteudo a:hover {
+        color: yellow;
+    }
+
+```
+
+```sass
+    #conteudo {
+        background: green;
+        padding: 15px;
+
+        h1, h2 {
+            color: black;
+        }
+
+        a {
+            color: red;
+
+            &:hover {
+                color: yellow;
+            }
+        }
+    }
+```
+
+<h6 align="center">Scope</h6>
+
+```sass
+    $default-color: blue;
+
+    h1 {
+        $default-color: red;
+
+        background-color: $default-color; /* red */
+    }
+
+    h2 {
+        background-color: $default-color; /* blue */
+    }
 ```
