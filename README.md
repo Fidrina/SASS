@@ -20,7 +20,7 @@
     sudo npm install -g sass
 ```
 
-<p align="center"><a href="https://www.sassmeister.com">SASS Meister</a></p>
+<p align="center"><a href="https://www.sassmeister.com">📩 SASS Meister 📩</a></p>
 
 <h6 align="center">Compile Sass</h6>
 
