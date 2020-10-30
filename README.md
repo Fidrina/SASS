@@ -27,8 +27,9 @@
 <h6 align="center">Sass</h6>
 
 ```sass
-    h1
-        color: red
+    h1 {
+        color: red;
+    }
 ```
 
 <h6 align="center">Sass to Scss</h6>
@@ -47,22 +48,22 @@
 
 ```sass
     h1 {
-        color: red
+        color: red;
     }
 ```
 
 <h6 align="center">Variables</h6>
 
 ```sass
-    $color: black
+    $color: black;
 
     h1 {
-        color: $color
+        color: $color;
     }
 
     h2 {
-        color: $color
-        font-size: 2rem
+        color: $color;
+        font-size: 2rem;
     }
 ```
 
@@ -102,18 +103,18 @@
 
 ```sass
     #conteudo {
-        background: green
-        padding: 15px
+        background: green;
+        padding: 15px;
 
         h1, h2 {
-            color: black
+            color: black;
         }
 
         a {
-            color: red
+            color: red;
 
             &:hover {
-                color: yellow
+                color: yellow;
             }
         }
     }
@@ -122,41 +123,41 @@
 <h6 align="center">Scope</h6>
 
 ```sass
-    $default-color: blue
+    $default-color: blue;
 
     h1 {
-        $default-color: red
+        $default-color: red;
 
-        background-color: $default-color /* red */
+        background-color: $default-color; /* red */
     }
 
     h2 {
-        background-color: $default-color /* blue */
+        background-color: $default-color; /* blue */
     }
 ```
 
 ```sass
-    $default-color: blue
+    $default-color: blue;
 
     h1 {
-        $default-color: red !global
+        $default-color: red !global;
 
-        background-color: $default-color /* red */
+        background-color: $default-color; /* red */
     }
 
     h2 {
-        background-color: $default-color /* red */
+        background-color: $default-color; /* red */
     }
 ```
 
 <h6 align="center">Interpolation</h6>
 
 ```sass
-    $class: red
-    $color: color
+    $class: red;
+    $color: color;
 
     .#{$color} {
-        #{$color}: $class
+        #{$color}: $class;
     }
 ```
 
