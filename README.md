@@ -215,3 +215,33 @@
         $counter: $counter + 1;
     }
 ```
+
+<h6 align="center">Functions</h6>
+
+```sass
+    $total: 12;
+
+    @function column-width($column: 0) {
+        @return ($column / $total);
+    }
+
+    @function perc-column-width($column: 0) {
+        @return column-width($column) * 100;
+    }
+
+    @function perc-string-column-width($column: 0) {
+        @return percentage(column-width($column));
+    }
+
+    $result-abs: column-width(3);
+
+    $result-perc: perc-column-width(3);
+
+    $result-perc-string: perc-string-column-width(3);
+
+    /* #{$result-abs} */
+
+    /* #{$result-perc} */
+
+    /* #{$result-perc-string} */
+```
