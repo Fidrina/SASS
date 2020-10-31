@@ -333,3 +333,23 @@
         @extend %parent;
     }
 ```
+
+<h6 align="center">If</h6>
+
+```sass
+    $color: green;
+
+    @if($color == green) {
+        p {
+            color: green;
+        }
+    } @else if($color == blue) {
+        p {
+            color: blue;
+        }
+    } @else {
+        p {
+            color: black;
+        }
+    }
+```
