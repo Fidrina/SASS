@@ -323,3 +323,13 @@
         @extend .parent-two;
     }
 ```
+
+```sass
+    %parent {
+        background: green;
+    }
+
+    .child {
+        @extend %parent;
+    }
+```
