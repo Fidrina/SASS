@@ -353,3 +353,19 @@
         }
     }
 ```
+
+```sass
+    @mixin theme($theme) {
+        @if($theme == Christmas) {
+            background-color: white;
+            color: red;
+        } @else {
+            background-color: green;
+            color: gray;
+        }
+    }
+
+    body {
+        @include theme(Christmas);
+    }
+```
