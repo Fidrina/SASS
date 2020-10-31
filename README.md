@@ -288,3 +288,38 @@
 ```sass
     sass scss css
 ```
+
+<h6 align="center">Mixin</h6>
+
+```sass
+    @mixin titulo ($color, $bg-color) {
+        color: $color;
+        background-color: $bg-color;
+        padding: 10px 5px;
+    }
+
+    h1 {
+        @include titulo (white, gray);
+    }
+
+    h2 {
+        @include titulo (green, blue);
+    }
+```
+
+<h6 align="center">Herança</h6>
+
+```sass
+    .parent-one {
+        background: green;
+    }
+
+    .parent-two {
+        color: blue;
+    }
+
+    .child {
+        @extend .parent-one;
+        @extend .parent-two;
+    }
+```
