@@ -245,3 +245,46 @@
 
     /* #{$result-perc-string} */
 ```
+
+```sass
+    .alert {
+        background: mix(blue, green, 50%);
+        color: black;
+    }
+
+    .alert {
+        background: darken(green, 25%);
+        color: black;
+    }
+
+    .alert {
+        background: lighten(green, 50%);
+        color: black;
+    }
+```
+
+<h6 align="center">Importação</h6>
+
+`Arquivos iniciando por underline não geram um .css, mas podem ser importados e usados por outras folhas de estilo.`
+
+```bash
+    .
+    ├── css
+    │   ├── main.css
+    │   └── main.css.map
+    └── scss
+        ├── main.scss
+        └── _styles.scss
+
+    2 directories, 7 files
+```
+
+```sass
+    @import "<filename>.scss";
+
+    ...
+```
+
+```sass
+    sass scss css
+```
